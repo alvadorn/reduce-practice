@@ -1,0 +1,40 @@
+{
+  "name": "reduce-pratice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest -i"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^24.0.24",
+    "jest": "^24.9.0",
+    "jest-pnp-resolver": "^1.2.1",
+    "ts-jest": "^24.2.0",
+    "typescript": "^3.7.3"
+  },
+  "jest": {
+    "verbose": true,
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "testMatch": [
+      "<rootDir>/**/?(*.)(spec|test).{js,ts}",
+      "<rootDir>/?(*.)(spec|test).{js, ts}"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "ts",
+      "node"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "resolver": "jest-pnp-resolver",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    }
+  }
+}
